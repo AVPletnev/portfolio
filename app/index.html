@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>OptimizedHTML 4</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	
+	<!-- Template Basic Images End -->
+
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+	<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 style="display: none;">
+		<symbol viewbox="0 0 512 512" id="browser-ui" xmlns="http://www.w3.org/2000/svg">
+			<path d="M405.783 316.634L371.65 333.7a8.532 8.532 0 0 0-4.719 7.637v59.733a8.536 8.536 0 0 0 8.533 8.533 8.53 8.53 0 0 0 8.533-8.533v-54.46l29.423-14.71c4.215-2.108 5.922-7.236 3.814-11.452-2.107-4.207-7.227-5.939-11.451-3.814zm-269.25 127.099c9.412 0 17.067-7.654 17.067-17.067s-7.654-17.067-17.067-17.067c-9.412 0-17.067 7.654-17.067 17.067s7.655 17.067 17.067 17.067zm-76.8-401.066c-9.412 0-17.067 7.654-17.067 17.067S50.321 76.8 59.733 76.8 76.8 69.146 76.8 59.733s-7.654-17.066-17.067-17.066z" />
+			<path d="M487.492 0H24.508C10.999 0 0 10.999 0 24.508V102.4h512V24.508C512 10.999 501.001 0 487.492 0zM59.733 93.867c-18.825 0-34.133-15.309-34.133-34.133S40.909 25.6 59.733 25.6s34.133 15.309 34.133 34.133-15.308 34.134-34.133 34.134zm76.8 0c-18.825 0-34.133-15.309-34.133-34.133S117.709 25.6 136.533 25.6s34.133 15.309 34.133 34.133-15.308 34.134-34.133 34.134zm76.8 0c-18.825 0-34.133-15.309-34.133-34.133S194.509 25.6 213.333 25.6c18.825 0 34.133 15.309 34.133 34.133s-15.308 34.134-34.133 34.134zM0 341.333h256a8.536 8.536 0 0 1 8.533 8.533V512h153.6a8.509 8.509 0 0 0 3.021-.572c.034-.009.068 0 .094-.017l3.217-1.254c11.059-4.292 22.494-8.738 33.075-17.05 35.115-27.605 54.46-69.384 54.46-117.64v-256H0v221.866zm179.2-17.066h-17.067a8.536 8.536 0 0 1-8.533-8.533 8.536 8.536 0 0 1 8.533-8.533H179.2a8.536 8.536 0 0 1 8.533 8.533 8.536 8.536 0 0 1-8.533 8.533zm34.133-136.534H93.867c-4.71 0-8.533-3.823-8.533-8.533s3.823-8.533 8.533-8.533h119.467c4.71 0 8.533 3.823 8.533 8.533s-3.823 8.533-8.534 8.533zM332.8 204.8a8.536 8.536 0 0 1 8.533 8.533 8.536 8.536 0 0 1-8.533 8.533H213.333a8.536 8.536 0 0 1-8.533-8.533 8.536 8.536 0 0 1 8.533-8.533H332.8zm-170.667 0H179.2a8.536 8.536 0 0 1 8.533 8.533 8.536 8.536 0 0 1-8.533 8.533h-17.067a8.536 8.536 0 0 1-8.533-8.533 8.536 8.536 0 0 1 8.533-8.533zm51.2 68.267c4.71 0 8.533 3.823 8.533 8.533s-3.823 8.533-8.533 8.533H93.867c-4.71 0-8.533-3.823-8.533-8.533s3.823-8.533 8.533-8.533h119.466zm59.734 51.2h-59.733a8.536 8.536 0 0 1-8.533-8.533 8.536 8.536 0 0 1 8.533-8.533h59.733a8.536 8.536 0 0 1 8.533 8.533 8.536 8.536 0 0 1-8.533 8.533zm8.533-34.134h-34.133c-4.71 0-8.533-3.823-8.533-8.533s3.823-8.533 8.533-8.533H281.6c4.71 0 8.533 3.823 8.533 8.533s-3.823 8.533-8.533 8.533zm0-34.133h-85.333c-4.71 0-8.533-3.823-8.533-8.533s3.823-8.533 8.533-8.533H281.6c4.71 0 8.533 3.823 8.533 8.533S286.31 256 281.6 256zm25.6-8.533a8.536 8.536 0 0 1 8.533-8.533h59.733c4.71 0 8.533 3.823 8.533 8.533S380.177 256 375.467 256h-59.733c-4.711 0-8.534-3.823-8.534-8.533zM418.133 204.8a8.536 8.536 0 0 1 8.533 8.533 8.536 8.536 0 0 1-8.533 8.533h-51.2a8.536 8.536 0 0 1-8.533-8.533 8.536 8.536 0 0 1 8.533-8.533h51.2zM384 179.2a8.536 8.536 0 0 1 8.533-8.533h8.533c4.71 0 8.533 3.823 8.533 8.533s-3.823 8.533-8.533 8.533h-8.533A8.536 8.536 0 0 1 384 179.2zm95.42 123.494c2.202.563 4.446 1.092 6.741 1.587 1.826.393 3.678.768 5.555 1.109 1.092.205 2.108.461 3.217.649v69.427c0 42.914-17.024 79.923-47.94 104.226-8.585 6.741-18.364 10.539-28.706 14.558l-.154.06-.162-.068c-5.171-2.005-10.197-3.951-15.002-6.246-1.613-.768-3.166-1.655-4.727-2.517-.759-.418-1.562-.777-2.313-1.229a62.018 62.018 0 0 1-6.656-4.557c-27.051-21.257-43.469-52.258-47.147-88.422a155.052 155.052 0 0 1-.794-15.804V306.04c33.109-5.53 57.318-18.449 76.8-31.241a311.139 311.139 0 0 0 7.808 4.949c.862.521 1.784 1.033 2.662 1.562a252.361 252.361 0 0 0 5.7 3.311c1.101.614 2.27 1.203 3.405 1.809 1.826.973 3.652 1.946 5.555 2.884 1.271.631 2.603 1.22 3.908 1.835 1.869.879 3.746 1.749 5.7 2.586 1.417.597 2.884 1.169 4.344 1.749 1.963.777 3.934 1.545 5.973 2.278 1.553.555 3.149 1.075 4.745 1.596 2.074.674 4.173 1.331 6.332 1.954 1.691.486 3.415.939 5.156 1.382zM460.8 187.733h-25.6c-4.71 0-8.533-3.823-8.533-8.533s3.823-8.533 8.533-8.533h25.6c4.71 0 8.533 3.823 8.533 8.533s-3.823 8.533-8.533 8.533zm8.533 25.6a8.536 8.536 0 0 1-8.533 8.533h-8.533a8.536 8.536 0 0 1-8.533-8.533 8.536 8.536 0 0 1 8.533-8.533h8.533a8.536 8.536 0 0 1 8.533 8.533zm-102.4-76.8H460.8c4.71 0 8.533 3.823 8.533 8.533s-3.823 8.533-8.533 8.533h-93.867c-4.71 0-8.533-3.823-8.533-8.533s3.823-8.533 8.533-8.533zm0 42.667a8.536 8.536 0 0 1-8.533 8.533H247.467c-4.71 0-8.533-3.823-8.533-8.533s3.823-8.533 8.533-8.533H358.4a8.536 8.536 0 0 1 8.533 8.533zm-51.2-42.667H332.8c4.71 0 8.533 3.823 8.533 8.533s-3.823 8.533-8.533 8.533h-17.067c-4.71 0-8.533-3.823-8.533-8.533s3.823-8.533 8.533-8.533zm-119.466 0H281.6c4.71 0 8.533 3.823 8.533 8.533s-3.823 8.533-8.533 8.533h-85.333c-4.71 0-8.533-3.823-8.533-8.533s3.822-8.533 8.533-8.533zm-145.067 0h110.933c4.71 0 8.533 3.823 8.533 8.533s-3.823 8.533-8.533 8.533H51.2c-4.71 0-8.533-3.823-8.533-8.533s3.823-8.533 8.533-8.533zm0 34.134h8.533c4.71 0 8.533 3.823 8.533 8.533s-3.823 8.533-8.533 8.533H51.2c-4.71 0-8.533-3.823-8.533-8.533s3.823-8.533 8.533-8.533zm0 34.133H128a8.536 8.536 0 0 1 8.533 8.533 8.536 8.536 0 0 1-8.533 8.533H51.2a8.536 8.536 0 0 1-8.533-8.533A8.536 8.536 0 0 1 51.2 204.8zm0 34.133h110.933c4.71 0 8.533 3.823 8.533 8.533S166.844 256 162.133 256H51.2c-4.71 0-8.533-3.823-8.533-8.533s3.823-8.534 8.533-8.534zm0 34.134h8.533c4.71 0 8.533 3.823 8.533 8.533s-3.823 8.533-8.533 8.533H51.2c-4.71 0-8.533-3.823-8.533-8.533s3.823-8.533 8.533-8.533zm0 34.133H128a8.536 8.536 0 0 1 8.533 8.533 8.536 8.536 0 0 1-8.533 8.533H51.2a8.536 8.536 0 0 1-8.533-8.533A8.536 8.536 0 0 1 51.2 307.2z" />
+			<path d="M213.333 42.667c-9.412 0-17.067 7.654-17.067 17.067S203.921 76.8 213.333 76.8c9.412 0 17.067-7.654 17.067-17.067s-7.654-17.066-17.067-17.066zM0 484.796C0 499.797 12.203 512 27.196 512h220.271V358.4H0v126.396zm42.667-66.663h60.945c3.814-14.677 17.067-25.6 32.922-25.6s29.107 10.923 32.922 25.6h52.412c4.71 0 8.533 3.823 8.533 8.533s-3.823 8.533-8.533 8.533h-52.412c-3.814 14.677-17.067 25.6-32.922 25.6s-29.107-10.923-32.922-25.6H42.667c-4.71 0-8.533-3.823-8.533-8.533s3.822-8.533 8.533-8.533zm93.866-375.466c-9.412 0-17.067 7.654-17.067 17.067S127.121 76.8 136.533 76.8c9.412 0 17.067-7.654 17.067-17.067s-7.654-17.066-17.067-17.066z" />
+		</symbol>
+		<symbol viewbox="0 0 15.52 30.72" id="fb" xmlns="http://www.w3.org/2000/svg">
+			<g data-name="&#x421;&#x43B;&#x43E;&#x439; 2">
+				<path d="M15 10.64h-4.57v-3c.34-2.87 5.07-2.33 5.07-2.33V.35c-.16 0-9.43-2.23-11.27 4.82A36.2 36.2 0 0 0 4 10.64H0V16h4.2v14.72h6.12V16H15l.53-5.4z"
+				 fill-rule="evenodd" data-name="Capa 1" />
+			</g>
+		</symbol>
+		<symbol viewbox="0 0 30.72 26.04" id="gh" xmlns="http://www.w3.org/2000/svg">
+			<g data-name="&#x421;&#x43B;&#x43E;&#x439; 2">
+				<path d="M4.2 18.18a5.69 5.69 0 0 1 1.31-4.27 4.6 4.6 0 0 1 3.31-1.43c2 0 3.79.54 5.22.54a24.22 24.22 0 0 0 4.27-.17c1.7-.24 3.57-.59 5.14-.11a4.22 4.22 0 0 1 2.18 1.65 6.87 6.87 0 0 1 .11 6.61C24.3 23.38 21 24.18 18 24.18a44 44 0 0 1-8.4-.36c-2.87-.59-5.4-2.42-5.4-5.64zm14.8-.6A4.37 4.37 0 0 0 20.21 21c1.78 1.43 3.49-1 3.49-3.19 0-3-2.7-5.1-4.12-2.44a5.2 5.2 0 0 0-.58 2.21zm-12 .3c0 3.06 2.57 5.06 4.12 2.5a5.41 5.41 0 0 0 .06-4.94 1.94 1.94 0 0 0-3.6.08A5.54 5.54 0 0 0 7 17.88zM30.72 14a14.62 14.62 0 0 0-.4-2.82 10.9 10.9 0 0 0-1.94-3.88c-.3-.37-.06-.17.19-1.43A9.38 9.38 0 0 0 28 .34C27.86 0 27.9 0 27.48 0a9.43 9.43 0 0 0-5.91 2.38c-.85.64-.12.57-2 .25A24.62 24.62 0 0 0 10.2 3c-.23.05-.19.15-.64-.26A10.46 10.46 0 0 0 3.24 0c-.43 0-.38-.09-.65.73A8.55 8.55 0 0 0 2 3.66a10.72 10.72 0 0 0 .54 3.6 2.87 2.87 0 0 0-.54.61c-.17.23-.3.43-.47.68A10.78 10.78 0 0 0 0 14c0 3.73.15 5.14 2.08 8l1.18 1.21c.33.25.61.45 1 .67C7.45 25.89 12 26 16.56 26c4.06 0 9.55-.69 12.25-4.07.11-.14.21-.29.33-.45a10.94 10.94 0 0 0 1.58-5.64z"
+				 fill-rule="evenodd" data-name="Capa 1" />
+			</g>
+		</symbol>
+		<symbol viewbox="0 0 30.72 30.72" id="inst" xmlns="http://www.w3.org/2000/svg">
+			<g data-name="&#x421;&#x43B;&#x43E;&#x439; 2">
+				<path d="M15 0c-3.83 0-4.37 0-6 .09a11.39 11.39 0 0 0-3.7.72 7.38 7.38 0 0 0-2.72 1.77A7.38 7.38 0 0 0 .81 5.3 11.39 11.39 0 0 0 .09 9C0 10.67 0 11.19 0 15.36s0 4.69.09 6.33a11.39 11.39 0 0 0 .72 3.73 7.38 7.38 0 0 0 1.77 2.72 7.38 7.38 0 0 0 2.72 1.77 11.39 11.39 0 0 0 3.7.72c1.64.07 2.16.09 6.33.09s4.69 0 6.33-.09a11.39 11.39 0 0 0 3.73-.72 7.84 7.84 0 0 0 4.49-4.49 11.39 11.39 0 0 0 .72-3.73c.07-1.58.09-2.12.09-6V15c0-3.83 0-4.37-.09-6a11.39 11.39 0 0 0-.72-3.73 7.38 7.38 0 0 0-1.77-2.72A7.38 7.38 0 0 0 25.42.81a11.39 11.39 0 0 0-3.73-.72C20.11 0 19.57 0 15.74 0zm10.4 7.16a1.84 1.84 0 1 1-1.84-1.84 1.84 1.84 0 0 1 1.84 1.84zm-10 13.32a5.12 5.12 0 1 1 5.12-5.12 5.12 5.12 0 0 1-5.12 5.12zm0-13a7.89 7.89 0 1 1-7.89 7.89 7.89 7.89 0 0 1 7.89-7.89zm0-4.7c4.1 0 4.59 0 6.21.09a8.57 8.57 0 0 1 2.85.53 4.53 4.53 0 0 1 1.76 1.15 4.53 4.53 0 0 1 1.11 1.75 8.57 8.57 0 0 1 .53 2.85c.08 1.62.09 2.11.09 6.21s0 4.59-.09 6.21a8.57 8.57 0 0 1-.53 2.85 5 5 0 0 1-2.91 2.91 8.57 8.57 0 0 1-2.85.53c-1.62.08-2.11.09-6.21.09s-4.59 0-6.21-.09a8.57 8.57 0 0 1-2.85-.53 4.62 4.62 0 0 1-1.76-1.14 4.64 4.64 0 0 1-1.15-1.77 8.57 8.57 0 0 1-.53-2.85c-.08-1.62-.09-2.11-.09-6.21s0-4.59.09-6.21a8.57 8.57 0 0 1 .53-2.85 4.53 4.53 0 0 1 1.15-1.76A4.53 4.53 0 0 1 6.3 3.39a8.57 8.57 0 0 1 2.85-.53c1.62-.08 2.11-.09 6.21-.09z"
+				 fill-rule="evenodd" data-name="Capa 1" />
+			</g>
+		</symbol>
+		<symbol viewbox="0 0 472.62 393.85" id="responsive" xmlns="http://www.w3.org/2000/svg">
+			<g data-name="&#x421;&#x43B;&#x43E;&#x439; 2">
+				<g data-name="Layer 1">
+					<rect x="193.34" y="118.15" width="204.08" height="21.48" rx="7.45" />
+					<rect x="193.34" y="343.72" width="139.64" height="50.13" rx="7.45" />
+					<path d="M0 7.45v199.92a7.46 7.46 0 0 0 7.45 7.46h157a7.46 7.46 0 0 0 7.45-7.46V104.12a7.46 7.46 0 0 1 7.45-7.45h189.14a7.44 7.44 0 0 0 7.45-7.45V7.45A7.45 7.45 0 0 0 368.49 0H7.45A7.46 7.46 0 0 0 0 7.45z" />
+					<rect y="236.31" width="171.87" height="42.97" rx="7.45" />
+					<path d="M128.9 308.21v6.58a7.46 7.46 0 0 1-7.46 7.45h-18.15a7.45 7.45 0 0 0-7.45 7.45v6.58a7.46 7.46 0 0 0 7.45 7.45h61.12a7.46 7.46 0 0 0 7.45-7.45v-28.06a7.45 7.45 0 0 0-7.45-7.45h-28.06a7.44 7.44 0 0 0-7.45 7.45zm64.44-139.64v146.22a7.46 7.46 0 0 0 7.46 7.45h124.73a7.46 7.46 0 0 0 7.45-7.45V190.05a7.46 7.46 0 0 1 7.45-7.45H390a7.45 7.45 0 0 0 7.46-7.45v-6.58a7.46 7.46 0 0 0-7.46-7.45H200.8a7.46 7.46 0 0 0-7.46 7.45z" />
+					<rect x="354.46" y="365.19" width="118.15" height="28.64" rx="7.45" />
+					<rect x="354.46" y="204.08" width="118.15" height="21.48" rx="7.45" />
+					<rect x="354.46" y="247.04" width="118.15" height="96.67" rx="7.45" />
+				</g>
+			</g>
+		</symbol>
+		<symbol viewbox="0 0 309.133 309.133" id="rocket" xmlns="http://www.w3.org/2000/svg">
+			<path d="M30.078 172.934c23.695-34.108 37.633-56.082 47.795-72.321-39.053 3.454-76.486 52.048-76.486 52.048l25.777 25.776a26.79 26.79 0 0 1 2.914-5.503zm100.645 109.063l25.76 25.759s48.592-37.43 52.047-76.482c-16.234 10.158-38.201 24.091-72.32 47.792a26.817 26.817 0 0 1-5.487 2.931zm-39.174-13.319c-4.422 1.787-8.768 3.686-13.299 5.2-12.102 4.045-24.566 6.778-37.203 8.522-5.297.731-10.643 1.351-15.998 1.757.051-.661.1-1.323.156-1.983 1.105-12.876 3.064-25.685 6.229-38.223 1.525-6.051 3.471-11.933 5.56-17.807 1.299-3.652 2.92-7.147 4.555-10.642l-2.834-2.832c-6.303 4.234-11.785 9.584-16.437 15.637-6.887 8.963-12.049 19.117-15.658 29.817C2.743 269.613.431 281.781.071 293.911c-.051 1.704-.168 3.445.096 5.136a11.941 11.941 0 0 0 8.123 9.505c1.746.563 3.502.573 5.313.559 11.012-.092 22.195-2.005 32.736-5.137 19.279-5.728 38.742-16.504 50.15-33.532l-2.758-2.756c-.723.34-1.448.673-2.182.992zM306.004 3.149L306 3.146A10.688 10.688 0 0 0 298.234.02c-34.41.675-119.307 7.111-164.393 52.199-20.467 20.467-27.119 31.121-41.699 54.469-10.5 16.81-24.875 39.835-51.147 77.649a10.691 10.691 0 0 0 1.221 13.66l68.928 68.929a10.678 10.678 0 0 0 7.564 3.133c2.119 0 4.248-.628 6.096-1.911 37.828-26.278 60.844-40.65 77.648-51.146 23.346-14.579 34.002-21.233 54.473-41.702 45.166-45.168 51.557-130.009 52.205-164.39a10.69 10.69 0 0 0-3.126-7.761zm-79.817 130.057c-13.877 13.876-36.373 13.876-50.25 0-13.879-13.877-13.877-36.372.002-50.248 13.875-13.877 36.371-13.879 50.248-.003 13.873 13.876 13.875 36.376 0 50.251z" />
+		</symbol>
+		<symbol viewbox="0 0 601.799 601.799" id="speed" xmlns="http://www.w3.org/2000/svg">
+			<path d="M300.899 0C134.716 0 0 134.716 0 300.899s134.716 300.9 300.899 300.9 300.9-134.717 300.9-300.9C601.797 134.716 467.082 0 300.899 0zm28.763 327.377c-15.584 15.486-40.771 15.408-56.257-.178-15.487-15.584-15.407-40.771.178-56.258 9.373-9.312 22.212-12.953 34.33-11.022l103.928-70.288-70.943 103.483c1.858 12.134-1.863 24.952-11.236 34.263zm227.561-102.938c5.211 15.168 8.223 28.914 10.178 40.297l1.322 8.1c.355 2.629.605 5.208.871 7.552.252 2.362.48 4.547.695 6.548.193 1.961.236 3.305.346 4.743.365 5.508.557 8.445.557 8.445l-61.182 1.549s.047-2.944.129-8.465c.006-1.319.076-3.06.037-4.479-.047-1.377-.096-2.883-.146-4.507-.049-1.641-.102-3.406-.156-5.288-.162-2.007-.338-4.137-.521-6.389-.789-9.002-2.232-19.96-5.369-32.25a214.73 214.73 0 0 0-14.432-40.208c-6.732-14.253-15.906-28.893-27.375-43.116-5.822-7.025-12.113-14.063-19.195-20.618-3.43-3.406-7.209-6.487-10.936-9.734-1.895-1.582-3.891-3.054-5.846-4.608a91.488 91.488 0 0 0-6.033-4.489c-16.35-11.793-35.064-21.644-55.27-28.749-10.092-3.608-20.613-6.255-31.301-8.437-5.373-.927-10.77-1.919-16.236-2.454-2.727-.337-5.459-.692-8.211-.817l-4.125-.284-2.064-.144-1.035-.073-.518-.037-.257-.018c.086-.009-.56-.006.128-.024-5.78-.037-12.081-.334-17.164-.021-5.285.049-10.82.566-16.337 1.034-10.967 1.261-21.901 3.02-32.531 5.805-21.279 5.462-41.564 13.941-59.759 24.801a98.299 98.299 0 0 0-6.738 4.156c-2.194 1.447-4.431 2.824-6.57 4.314-4.217 3.066-8.501 5.995-12.445 9.272-8.106 6.3-15.462 13.195-22.356 20.187-13.614 14.153-24.955 29.165-33.685 44.11a237.91 237.91 0 0 0-19.801 43.018c-4.685 13.4-7.399 25.56-9.177 35.64-.425 2.528-.829 4.921-1.211 7.173-.275 2.268-.533 4.394-.771 6.374-.493 3.959-.866 7.341-.985 10.092-.355 5.523-.548 8.461-.548 8.461s-.046-2.944-.128-8.467c-.104-2.77-.006-6.175.162-10.184.08-2.007.166-4.165.254-6.466.199-2.295.407-4.737.63-7.313.967-10.303 2.705-22.843 6.371-36.904a245.372 245.372 0 0 1 16.784-45.921c7.8-16.246 18.348-32.91 31.527-49.052 6.677-7.983 13.908-15.949 22.007-23.385 3.938-3.846 8.25-7.356 12.528-11.019 2.169-1.79 4.446-3.467 6.686-5.217a110.89 110.89 0 0 1 6.903-5.076c18.703-13.333 40.089-24.45 63.152-32.415 11.521-4.039 23.507-7.013 35.683-9.412 6.108-1.035 12.209-2.108 18.669-2.711 6.625-.857 12.111-.998 18.088-1.45l9.776-.132c3.137-.098 6.268.037 9.396.166 6.279.116 12.521.716 18.773 1.291 12.451 1.478 24.854 3.565 36.914 6.781 24.137 6.319 47.092 16.071 67.641 28.467a119.243 119.243 0 0 1 7.607 4.746c2.479 1.649 4.996 3.229 7.41 4.927 4.768 3.479 9.584 6.839 14.037 10.557 9.125 7.182 17.42 15.006 25.168 22.956 15.324 16.068 28.043 33.109 37.838 50.046a268.478 268.478 0 0 1 22.147 48.725z" />
+		</symbol>
+		<symbol viewbox="0 0 30.72 17.52" id="vk" xmlns="http://www.w3.org/2000/svg">
+			<g data-name="&#x421;&#x43B;&#x43E;&#x439; 2">
+				<path d="M18 15.84c.08-1.23.63-3.15 2-2.1a20.22 20.22 0 0 1 2.26 2.35 3.9 3.9 0 0 0 3.24 1.43 25.75 25.75 0 0 0 4.48-.2c2.19-.79-1.69-4.43-2.64-5.24a16.7 16.7 0 0 1-1.19-1.19 1.27 1.27 0 0 1-.29-1.6l1.47-2.07a41.06 41.06 0 0 0 2.43-3.4c.56-.91 1.71-2.7.23-3a43.2 43.2 0 0 0-4.56 0c-2 0-1.62-.21-2.62 2.1-.66 1.55-2.72 5.17-3.81 5.58-2 .77-.44-6.56-1.29-7.83-.52-.77-2.92-.67-4-.66-1.3 0-3.1.09-3.48 1.16.12.1 0 0 .22.12a6.08 6.08 0 0 1 .69.23 1.77 1.77 0 0 1 .59.56c.61 1 .54 5.12 0 6.12-1 1.88-3.73-3.39-4.21-4.32C6.84 2.54 6.57 1.23 5.8.9A27.23 27.23 0 0 0 1.23.81C.45.82-.22 1 .07 1.87a17 17 0 0 0 .72 1.59A51.82 51.82 0 0 0 6 12.31c2 2.72 5.08 5.13 8.91 5.16 2.75.02 2.95.14 3.09-1.63z"
+				 fill-rule="evenodd" data-name="Capa 1" />
+			</g>
+		</symbol>
+	</svg>
+
+
+</head>
+
+<body>
+
+	<!-- Custom HTML -->
+
+
+
+
+	<div class="hero-content">
+
+
+
+		<div id="particles-js">
+			<header class="header">
+				<section class="section-header">
+					<nav class="menu">
+						<ul class="menu-list">
+							<li class="menu-list__item"><a href="/" class="menu-list__link active_link">About</a></li>
+							<li class="menu-list__item"><a href="/" class="menu-list__link">Skills</a></li>
+							<li class="menu-list__item"><a href="/" class="menu-list__link">Expirience</a></li>
+							<li class="menu-list__item"><a href="/" class="menu-list__link">Portfolio</a></li>
+							<li class="menu-list__item"><a href="/" class="menu-list__link">Contact</a></li>
+						</ul>
+					</nav>
+				</section>
+			</header>
+			<img src="img/layer-bottom.svg" class="pattern-bottom" alt="">
+		</div>
+
+		<section class="section-wrapper">
+			<div class="block-content about_links">
+				<div class="link"><a href="/">download resume</a></div>
+				<div class="link"><a href="/">contact / hire me</a></div>
+				<div class="block-content__title">
+					about me
+				</div>
+				<div class="block-about">
+					<div class="block-about__item">
+						<div class="block-about__item-left" uk-scrollspy="cls: uk-animation-slide-left;">Name</div>
+						<div class="block-about__item-right"uk-scrollspy="cls: uk-animation-slide-right;">Alexandr Pletnev</div>
+					</div>
+					<div class="block-about__item">
+						<div class="block-about__item-left"uk-scrollspy="cls: uk-animation-slide-left; delay: 100">Email</div>
+						<div class="block-about__item-right"uk-scrollspy="cls: uk-animation-slide-right; delay: 100">Pletnev.work@gmail.com</div>
+					</div>
+					<div class="block-about__item">
+						<div class="block-about__item-left"uk-scrollspy="cls: uk-animation-slide-left; delay: 200">Contact No</div>
+						<div class="block-about__item-right"uk-scrollspy="cls: uk-animation-slide-right; delay: 200">+7 903 502 23 95</div>
+					</div>
+					<div class="block-about__item">
+						<div class="block-about__item-left"uk-scrollspy="cls: uk-animation-slide-left; delay: 300">Date of birth</div>
+						<div class="block-about__item-right"uk-scrollspy="cls: uk-animation-slide-right; delay: 300">Jule 29, 1990</div>
+					</div>
+					<div class="block-about__item">
+						<div class="block-about__item-left"uk-scrollspy="cls: uk-animation-slide-left; delay: 400">Nationality</div>
+						<div class="block-about__item-right"uk-scrollspy="cls: uk-animation-slide-right; delay: 400">Russian</div>
+					</div>
+					<div class="block-about__social">
+						<div class="block-about__social-item">
+							<!-- <img src="img/gh.svg" alt=""> -->
+							<svg class="icon">
+								<use xlink:href="#gh"></use>
+							</svg>
+						</div>
+						<div class="block-about__social-item">
+
+							<!-- <img src="img/inst.svg" alt=""> -->
+							<svg class="icon">
+								<use xlink:href="#inst"></use>
+							</svg>
+						</div>
+						<div class="block-about__social-item">
+
+							<!-- <img src="img/fb.svg" alt=""> -->
+							<svg class="icon">
+								<use xlink:href="#fb"></use>
+							</svg>
+						</div>
+						<div class="block-about__social-item">
+
+							<!-- <img src="img/vk.svg" alt=""> -->
+							<svg class="icon">
+								<use xlink:href="#vk"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+
+		<section class="section-wrapper">
+
+			<div class="block-content">
+				<div class="block-content__title">
+					skills
+				</div>
+			</div>
+
+			<div class="block-skills" uk-scrollspy="cls: uk-animation-fade; target: > .block-skills__item; delay: 300;">
+				<div class="block-skills__item">
+					<div class="block-skills__item-icon">
+						<svg class="icon">
+							<use xlink:href="#speed"></use>
+						</svg>
+					</div>
+					<div class="block-skills__item-title">fast</div>
+					<div class="block-skills__item-text">
+						Fast load times and lag free interaction, my highest priority.
+					</div>
+				</div>
+				<div class="block-skills__item">
+					<div class="block-skills__item-icon">
+						<svg class="icon">
+							<use xlink:href="#rocket"></use>
+						</svg>
+					</div>
+					
+					<div class="block-skills__item-title">dinamyc</div>
+					<div class="block-skills__item-text">Fast load times and lag free interaction, my highest priority.</div>
+				</div>
+				<div class="block-skills__item">
+					<div class="block-skills__item-icon">
+						<svg class="icon">
+							<use xlink:href="#responsive"></use>
+						</svg>
+					</div>
+					<div class="block-skills__item-title">responsive</div>
+					<div class="block-skills__item-text">My layouts will work on any device, big or small.</div>
+				</div>
+				<div class="block-skills__item">
+					<div class="block-skills__item-icon">
+						<svg class="icon">
+							<use xlink:href="#browser-ui"></use>
+						</svg>
+					</div>
+					<div class="block-skills__item-title">intuitive ui</div>
+					<div class="block-skills__item-text">Strong preference for easy to use, intuitive UX/UI.</div>
+				</div>
+			</div>
+
+			<div class="progress-block">
+				<div class="progress-block__item">
+					<div class="progress-block__item-title">html</div>
+					<div class="progress-bar">
+						<div class="progress-bar__enter" id="html">
+							
+						</div>
+						<span>80%</span>
+					</div>
+				</div>
+				<div class="progress-block__item">
+					<div class="progress-block__item-title">css</div>
+					<div class="progress-bar">
+							<div class="progress-bar__enter" id="css">
+								
+							</div>
+							<span>70%</span>
+						</div>
+				</div>
+				<div class="progress-block__item">
+					<div class="progress-block__item-title">javascript</div>
+					<div class="progress-bar">
+							<div class="progress-bar__enter" id="js">
+								
+							</div>
+							<span>50%</span>
+						</div>
+				</div>
+				<div class="progress-block__item">
+					<div class="progress-block__item-title">design</div>
+					<div class="progress-bar">
+							<div class="progress-bar__enter" id="ds">
+							</div>
+							<span>60%</span>
+						</div>
+				</div>
+			</div>
+			<div class="techno-block">
+				<div class="techno-block__title"uk-scrollspy="cls: uk-animation-slide-left;">technologies & tools</div>
+				<div class="techno-block__text"uk-scrollspy="cls: uk-animation-slide-right;">clean-code CROSS-BROWSER COMPATIBILITY pixel-perfect animation css bootstrap preprocces scss sass jquery gulp npm bem</div>
+			</div>
+
+
+		
+		</section>
+
+
+		<section class="section-wrapper">
+			<div class="block-content">
+
+				<div class="block-content__title">
+					portfolio
+				</div>
+
+				<div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="center: true">
+
+					<ul class="uk-slider-items uk-grid">
+						<li class="uk-width-3-4">
+							<div class="uk-panel">
+								<!-- <img src="img/jobs/arthotel.png" alt=""> -->
+								<div class="uk-position-center uk-panel"><h1>1</h1></div>
+							</div>
+						</li>
+						<li class="uk-width-3-4">
+							<div class="uk-panel">
+								<!-- <img src="img/jobs/demetra.png" alt=""> -->
+								<div class="uk-position-center uk-panel"><h1>2</h1></div>
+							</div>
+						</li>
+						<li class="uk-width-3-4">
+							<div class="uk-panel">
+								<!-- <img src="img/jobs/lavicon.png" alt=""> -->
+								<div class="uk-position-center uk-panel"><h1>3</h1></div>
+							</div>
+						</li>
+						<li class="uk-width-3-4">
+							<div class="uk-panel">
+								<!-- <img src="img/jobs/starboard.png" alt=""> -->
+								<div class="uk-position-center uk-panel"><h1>4</h1></div>
+							</div>
+						</li>
+						<li class="uk-width-3-4">
+							<div class="uk-panel">
+								<!-- <img src="img/jobs/wongamat.png" style="" alt=""> -->
+								<div class="uk-position-center uk-panel"><h1>5</h1></div>
+							</div>
+						</li>
+					</ul>
+				
+					<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+					<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+				
+				</div>
+
+
+			</div>
+		</section>
+		<section class="section-wrapper">
+			<div class="block-content">
+
+				<div class="block-content__title">
+					contact
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+	<script src="js/scripts.min.js"></script>
+	<script src="libs/particles/dist/app.js"></script>
+
+</body>
+
+</html>

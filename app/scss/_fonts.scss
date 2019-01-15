@@ -1,0 +1,11 @@
+@import "_mixins/font-face";
+
+@include font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
+@include font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);
+
+@include font-face("questrial", "../fonts/Questrial/QuestrialRegular");
+
+@include font-face("helvetica", "../fonts/Helvetica/HelveticaNeueCyr-Thin");
+@include font-face("helvetica", "../fonts/Helvetica/HelveticaNeueCyr-Light", 300);
+@include font-face("helvetica", "../fonts/Helvetica/HelveticaNeueCyr-Medium", 500);
+
