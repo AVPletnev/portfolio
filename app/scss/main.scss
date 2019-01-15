@@ -80,6 +80,8 @@ body .active_link {
 	padding: $padding-wrapper;
 	padding-bottom: 3rem;
 	flex-wrap: wrap;
+	max-width: 1400px;
+	margin: 0 auto;
 	
 
 }
@@ -172,7 +174,7 @@ body .active_link {
 
 .block-content {
 	display: flex;
-
+	max-width: 1320px;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 100%;

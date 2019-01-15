@@ -24,6 +24,8 @@
 	<!-- Custom Browsers Color End -->
 
 	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
 
 	<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 	 style="display: none;">
@@ -111,54 +113,54 @@
 
 		<section class="section-wrapper">
 			<div class="block-content about_links">
-				<div class="link"><a href="/">download resume</a></div>
-				<div class="link"><a href="/">contact / hire me</a></div>
-				<div class="block-content__title">
+				<div class="link"uk-scrollspy="cls: uk-animation-fade;"><a href="/">download resume</a></div>
+				<div class="link"uk-scrollspy="cls: uk-animation-fade;"><a href="/">contact / hire me</a></div>
+				<div class="block-content__title"uk-scrollspy="cls: uk-animation-fade;">
 					about me
 				</div>
 				<div class="block-about">
 					<div class="block-about__item">
-						<div class="block-about__item-left" uk-scrollspy="cls: uk-animation-slide-left;">Name</div>
-						<div class="block-about__item-right"uk-scrollspy="cls: uk-animation-slide-right;">Alexandr Pletnev</div>
+						<div class="block-about__item-left" uk-scrollspy="cls: uk-animation-fade;">Name</div>
+						<div class="block-about__item-right"uk-scrollspy="cls: uk-animation-fade;">Alexandr Pletnev</div>
 					</div>
 					<div class="block-about__item">
-						<div class="block-about__item-left"uk-scrollspy="cls: uk-animation-slide-left; delay: 100">Email</div>
-						<div class="block-about__item-right"uk-scrollspy="cls: uk-animation-slide-right; delay: 100">Pletnev.work@gmail.com</div>
+						<div class="block-about__item-left"uk-scrollspy="cls: uk-animation-fade; delay: 100">Email</div>
+						<div class="block-about__item-right"uk-scrollspy="cls: uk-animation-fade; delay: 100">Pletnev.work@gmail.com</div>
 					</div>
 					<div class="block-about__item">
-						<div class="block-about__item-left"uk-scrollspy="cls: uk-animation-slide-left; delay: 200">Contact No</div>
-						<div class="block-about__item-right"uk-scrollspy="cls: uk-animation-slide-right; delay: 200">+7 903 502 23 95</div>
+						<div class="block-about__item-left"uk-scrollspy="cls: uk-animation-fade; delay: 200">Contact No</div>
+						<div class="block-about__item-right"uk-scrollspy="cls: uk-animation-fade; delay: 200">+7 903 502 23 95</div>
 					</div>
 					<div class="block-about__item">
-						<div class="block-about__item-left"uk-scrollspy="cls: uk-animation-slide-left; delay: 300">Date of birth</div>
-						<div class="block-about__item-right"uk-scrollspy="cls: uk-animation-slide-right; delay: 300">Jule 29, 1990</div>
+						<div class="block-about__item-left"uk-scrollspy="cls: uk-animation-fade; delay: 300">Date of birth</div>
+						<div class="block-about__item-right"uk-scrollspy="cls: uk-animation-fade; delay: 300">Jule 29, 1990</div>
 					</div>
 					<div class="block-about__item">
-						<div class="block-about__item-left"uk-scrollspy="cls: uk-animation-slide-left; delay: 400">Nationality</div>
-						<div class="block-about__item-right"uk-scrollspy="cls: uk-animation-slide-right; delay: 400">Russian</div>
+						<div class="block-about__item-left"uk-scrollspy="cls: uk-animation-fade; delay: 400">Nationality</div>
+						<div class="block-about__item-right"uk-scrollspy="cls: uk-animation-fade; delay: 400">Russian</div>
 					</div>
 					<div class="block-about__social">
-						<div class="block-about__social-item">
+						<div class="block-about__social-item"uk-scrollspy="cls: uk-animation-fade;">
 							<!-- <img src="img/gh.svg" alt=""> -->
 							<svg class="icon">
 								<use xlink:href="#gh"></use>
 							</svg>
 						</div>
-						<div class="block-about__social-item">
+						<div class="block-about__social-item" uk-scrollspy="cls: uk-animation-fade; delay: 100">
 
 							<!-- <img src="img/inst.svg" alt=""> -->
 							<svg class="icon">
 								<use xlink:href="#inst"></use>
 							</svg>
 						</div>
-						<div class="block-about__social-item">
+						<div class="block-about__social-item" uk-scrollspy="cls: uk-animation-fade; delay: 200">
 
 							<!-- <img src="img/fb.svg" alt=""> -->
 							<svg class="icon">
 								<use xlink:href="#fb"></use>
 							</svg>
 						</div>
-						<div class="block-about__social-item">
+						<div class="block-about__social-item" uk-scrollspy="cls: uk-animation-fade; delay: 300">
 
 							<!-- <img src="img/vk.svg" alt=""> -->
 							<svg class="icon">
@@ -174,7 +176,7 @@
 
 		<section class="section-wrapper">
 
-			<div class="block-content">
+			<div class="block-content" uk-scrollspy="cls: uk-animation-fade;">
 				<div class="block-content__title">
 					skills
 				</div>
@@ -260,8 +262,8 @@
 				</div>
 			</div>
 			<div class="techno-block">
-				<div class="techno-block__title"uk-scrollspy="cls: uk-animation-slide-left;">technologies & tools</div>
-				<div class="techno-block__text"uk-scrollspy="cls: uk-animation-slide-right;">clean-code CROSS-BROWSER COMPATIBILITY pixel-perfect animation css bootstrap preprocces scss sass jquery gulp npm bem</div>
+				<div class="techno-block__title"uk-scrollspy="cls: uk-animation-fade;">technologies & tools</div>
+				<div class="techno-block__text"uk-scrollspy="cls: uk-animation-fade;">clean-code CROSS-BROWSER COMPATIBILITY pixel-perfect animation css bootstrap preprocces scss sass jquery gulp npm bem</div>
 			</div>
 
 
@@ -275,46 +277,55 @@
 				<div class="block-content__title">
 					portfolio
 				</div>
-
-				<div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="center: true">
+				<div class="slick-wrapper">
+					<div class="center">
+					<div>your content</div>
+					<div>your content</div>
+					<div>your content</div>
+				</div>
+				</div>
+				
+				<!-- <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
 
 					<ul class="uk-slider-items uk-grid">
-						<li class="uk-width-3-4">
-							<div class="uk-panel">
-								<!-- <img src="img/jobs/arthotel.png" alt=""> -->
-								<div class="uk-position-center uk-panel"><h1>1</h1></div>
-							</div>
-						</li>
-						<li class="uk-width-3-4">
-							<div class="uk-panel">
-								<!-- <img src="img/jobs/demetra.png" alt=""> -->
-								<div class="uk-position-center uk-panel"><h1>2</h1></div>
-							</div>
-						</li>
-						<li class="uk-width-3-4">
-							<div class="uk-panel">
-								<!-- <img src="img/jobs/lavicon.png" alt=""> -->
-								<div class="uk-position-center uk-panel"><h1>3</h1></div>
-							</div>
-						</li>
-						<li class="uk-width-3-4">
-							<div class="uk-panel">
-								<!-- <img src="img/jobs/starboard.png" alt=""> -->
-								<div class="uk-position-center uk-panel"><h1>4</h1></div>
-							</div>
-						</li>
-						<li class="uk-width-3-4">
-							<div class="uk-panel">
-								<!-- <img src="img/jobs/wongamat.png" style="" alt=""> -->
-								<div class="uk-position-center uk-panel"><h1>5</h1></div>
-							</div>
-						</li>
+							<li class="uk-width-1-2">
+									<div class="uk-panel">
+											<img src="img/jobs/arthotel.jpg" alt="">
+											
+									</div>
+							</li>
+							<li class="uk-width-1-2">
+									<div class="uk-panel">
+											<img src="img/jobs/arthotel.jpg" alt="">
+											
+									</div>
+							</li>
+							<li class="uk-width-1-2">
+									<div class="uk-panel">
+											<img src="img/jobs/arthotel.jpg" alt="">
+											
+									</div>
+							</li>
+							<li class="uk-width-1-2">
+									<div class="uk-panel">
+											<img src="img/jobs/arthotel.jpg" alt="">
+											
+									</div>
+							</li>
+							<li class="uk-width-1-2">
+									<div class="uk-panel">
+											<img src="img/jobs/arthotel.jpg" alt="">
+											
+									</div>
+							</li>
 					</ul>
-				
+			
 					<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
 					<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-				
-				</div>
+			
+			</div> -->
+
+			
 
 
 			</div>

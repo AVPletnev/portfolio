@@ -25,5 +25,8 @@
     "gulp-uglify": "^3.0.1",
     "gulp-util": "^3.0.8",
     "remove-svg-properties": "^0.3.3"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.0.1"
   }
 }

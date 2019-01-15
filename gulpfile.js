@@ -90,6 +90,7 @@ gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/uikit/dist/uikit.min.js',
+		'app/libs/slick/slick.min.js',
 		'app/libs/particles/dist/particles.min.js',
 		'app/js/common.js', // Always at the end
 		])
