@@ -37,7 +37,7 @@ $(function () {
 	
 	});
 
-	$('.center').slick({
+	$('.slider').slick({
 
 		
 	});

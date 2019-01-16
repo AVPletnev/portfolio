@@ -447,13 +447,17 @@ body .active_link {
 	}
 }
 
-li:not(.uk-active) {
-	img{
-		filter: grayscale(100%);
-		transition: all 1s;
+.slider-desk{
+	padding-top: 2rem;
+	&__item	{
+		height: 70vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		
 	}
-	
 }
+
 
 
 @keyframes link-line {
