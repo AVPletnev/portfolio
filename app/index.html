@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>OptimizedHTML 4</title>
+	<title>Portfolio</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,9 +24,7 @@
 	<!-- Custom Browsers Color End -->
 
 	<link rel="stylesheet" href="css/main.min.css">
-	<link rel="stylesheet" href="libs/slick/slick.css">
-	<link rel="stylesheet" href="libs/slick/slick-theme.css">
-
+	
 	<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 	 style="display: none;">
 		<symbol viewbox="0 0 512 512" id="browser-ui" xmlns="http://www.w3.org/2000/svg">
@@ -99,11 +97,11 @@
 				<section class="section-header">
 					<nav class="menu">
 						<ul class="menu-list">
-							<li class="menu-list__item"><a href="/" class="menu-list__link active_link">About</a></li>
-							<li class="menu-list__item"><a href="/" class="menu-list__link">Skills</a></li>
-							<li class="menu-list__item"><a href="/" class="menu-list__link">Expirience</a></li>
-							<li class="menu-list__item"><a href="/" class="menu-list__link">Portfolio</a></li>
-							<li class="menu-list__item"><a href="/" class="menu-list__link">Contact</a></li>
+							<li class="menu-list__item"><a href="#about" class="menu-list__link active_link">About</a></li>
+							<li class="menu-list__item"><a href="#skills" class="menu-list__link">Skills</a></li>
+							<li class="menu-list__item"><a href="#skills" class="menu-list__link">Expirience</a></li>
+							<li class="menu-list__item"><a href="#portfolio" class="menu-list__link">Portfolio</a></li>
+							<li class="menu-list__item"><a href="#contact" class="menu-list__link">Contact</a></li>
 						</ul>
 					</nav>
 				</section>
@@ -111,8 +109,8 @@
 			<img src="img/layer-bottom.svg" class="pattern-bottom" alt="">
 		</div>
 
-		<section class="section-wrapper">
-			<div class="block-content about_links">
+		<section class="section-wrapper" uk-parallax="bgy: -200" style="background: url(''); background-size: cover; background-repeat: no-repeat; background-position: center;">
+			<div class="block-content about_links" id="about">
 				<div class="link" uk-scrollspy="cls: uk-animation-fade;"><a href="/">download resume</a></div>
 				<div class="link" uk-scrollspy="cls: uk-animation-fade;"><a href="/">contact / hire me</a></div>
 				<div class="block-content__title" uk-scrollspy="cls: uk-animation-fade;">
@@ -176,13 +174,13 @@
 
 		<section class="section-wrapper">
 
-			<div class="block-content" uk-scrollspy="cls: uk-animation-fade;">
+			<div class="block-content" id="skills" uk-scrollspy="cls: uk-animation-fade;">
 				<div class="block-content__title">
 					skills
 				</div>
 			</div>
 
-			<div class="block-skills" uk-scrollspy="cls: uk-animation-fade; target: > .block-skills__item; delay: 300;">
+			<div class="block-skills" uk-scrollspy="cls: uk-animation-fade; target: > .block-skills__item; delay: 100;">
 				<div class="block-skills__item">
 					<div class="block-skills__item-icon">
 						<svg class="icon">
@@ -273,13 +271,13 @@
 
 
 		<section class="section-wrapper">
-			<div class="block-content">
+			<div class="block-content" id="portfolio">
 
 				<div class="block-content__title">
 					portfolio
 				</div>
 				<h2 class="portfolio__title">Desktop version</h2>
-				<div class="portfolio portfolio_active" uk-lightbox="animation: fade" uk-scrollspy="cls: uk-animation-fade; target: > .portfolio__item; delay: 300;">
+				<div class="portfolio portfolio_active" uk-lightbox="animation: fade" uk-scrollspy="cls: uk-animation-fade; target: > .portfolio__item; delay: 200;">
 					<a href="img/jobs/arthotel.jpg" class="portfolio__item image-sq-block" style="background: url('img/slider/arthotel.jpg'); background-size: cover;"></a>
 					<a href="img/jobs/starboard.jpg" class="portfolio__item image-sq-block" style="background: url('img/slider/starboard.jpg'); background-size: cover;"></a>
 					<a href="img/jobs/wongamat.jpg" class="portfolio__item image-sq-block" style="background: url('img/slider/wongamat.jpg'); background-size: cover;"></a>
@@ -288,7 +286,7 @@
 					
 				</div>
 				<h2 class="portfolio__title">Mobile version</h2>
-				<div class="portfolio portfolio_active-mob" uk-lightbox="animation: fade" uk-scrollspy="cls: uk-animation-fade; target: > .portfolio__item; delay: 300;">
+				<div class="portfolio portfolio_active-mob" uk-lightbox="animation: fade" uk-scrollspy="cls: uk-animation-fade; target: > .portfolio__item; delay: 200;">
 					<a href="img/jobs/arthotel-mob.jpg" class="portfolio__item image-sq-block mobile" style="background: url('img/slider/arthotel.jpg'); background-size: cover;"></a>
 					<a href="img/jobs/starboard-mob.jpg" class="portfolio__item image-sq-block mobile" style="background: url('img/slider/starboard.jpg'); background-size: cover;"></a>
 					<a href="img/jobs/wongamat-mob.jpg" class="portfolio__item image-sq-block mobile" style="background: url('img/slider/wongamat.jpg'); background-size: cover;"></a>
@@ -350,11 +348,21 @@
 			</div>
 		</section>
 		<section class="section-wrapper">
-			<div class="block-content">
+			<div class="block-content" id="contact">
 
 				<div class="block-content__title">
 					contact
 				</div>
+
+				<div class="block-form">
+					<form class="form" id="myForm" action="https://formspree.io/pletnev.work@gmail.com" method="POST">
+						<div class="form__item"><input type="text" name="name" placeholder="Name" required></div>
+						<div class="form__item"><input type="tel" name="telephone" placeholder="Telephone" required></div>
+						<div class="form__item"><textarea name="message" id="" cols="30" rows="5" placeholder="Message" required></textarea></div>
+						<button type="submit" class="button">To send</button>
+					</form>
+				</div>
+
 			</div>
 		</section>
 
