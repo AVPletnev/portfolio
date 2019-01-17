@@ -24,7 +24,7 @@
 	<!-- Custom Browsers Color End -->
 
 	<link rel="stylesheet" href="css/main.min.css">
-	
+
 	<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 	 style="display: none;">
 		<symbol viewbox="0 0 512 512" id="browser-ui" xmlns="http://www.w3.org/2000/svg">
@@ -105,20 +105,20 @@
 						</ul>
 					</nav>
 					<div class="burger-menu">
-							<div class="burger"></div>  
-						  </div>
+						<div class="burger"></div>
+					</div>
 				</section>
 			</header>
 			<img src="img/layer-bottom.svg" class="pattern-bottom" alt="">
 		</div>
 
-		<section class="section-wrapper" uk-parallax="bgy: -200" style="background: url(''); background-size: cover; background-repeat: no-repeat; background-position: center;">
+		<section class="section-wrapper" >
 			<div class="block-content about_links" id="about">
 				<div class="link" uk-scrollspy="cls: uk-animation-fade;"><a href="/">download resume</a></div>
 				<div class="link" uk-scrollspy="cls: uk-animation-fade;"><a href="/">contact / hire me</a></div>
-				<div class="block-content__title" uk-scrollspy="cls: uk-animation-fade;">
+				<h2 class="block-content__title" uk-scrollspy="cls: uk-animation-fade;">
 					about me
-				</div>
+				</h2>
 				<div class="block-about">
 					<div class="block-about__item">
 						<div class="block-about__item-left" uk-scrollspy="cls: uk-animation-fade;">Name</div>
@@ -141,33 +141,36 @@
 						<div class="block-about__item-right" uk-scrollspy="cls: uk-animation-fade; delay: 400">Russian</div>
 					</div>
 					<div class="block-about__social">
-						<div class="block-about__social-item" uk-scrollspy="cls: uk-animation-fade;">
+						<a href="https://github.com/AVPletnev" target="_blank" class="block-about__social-item" uk-scrollspy="cls: uk-animation-fade;">
 							<!-- <img src="img/gh.svg" alt=""> -->
-							<svg class="icon">
+				
+								<svg class="icon">
 								<use xlink:href="#gh"></use>
 							</svg>
-						</div>
-						<div class="block-about__social-item" uk-scrollspy="cls: uk-animation-fade; delay: 100">
+					
+							
+						</a>
+						<a href="https://www.instagram.com/kognitivniydissonans/" target="_blank" class="block-about__social-item" uk-scrollspy="cls: uk-animation-fade; delay: 100">
 
 							<!-- <img src="img/inst.svg" alt=""> -->
 							<svg class="icon">
 								<use xlink:href="#inst"></use>
 							</svg>
-						</div>
-						<div class="block-about__social-item" uk-scrollspy="cls: uk-animation-fade; delay: 200">
+						</a>
+						<a href="https://www.facebook.com/profile.php?id=100024912785811" target="_blank" class="block-about__social-item" uk-scrollspy="cls: uk-animation-fade; delay: 200">
 
 							<!-- <img src="img/fb.svg" alt=""> -->
 							<svg class="icon">
 								<use xlink:href="#fb"></use>
 							</svg>
-						</div>
-						<div class="block-about__social-item" uk-scrollspy="cls: uk-animation-fade; delay: 300">
+						</a>
+						<a href="https://vk.com/id2371521" target="_blank" class="block-about__social-item" uk-scrollspy="cls: uk-animation-fade; delay: 300">
 
 							<!-- <img src="img/vk.svg" alt=""> -->
 							<svg class="icon">
 								<use xlink:href="#vk"></use>
 							</svg>
-						</div>
+						</a>
 					</div>
 				</div>
 
@@ -175,98 +178,99 @@
 		</section>
 
 
-		<section class="section-wrapper">
+		<section class="section-wrapper" >
 
 			<div class="block-content" id="skills" uk-scrollspy="cls: uk-animation-fade;">
-				<div class="block-content__title">
+				<h2 class="block-content__title">
 					skills
+				</h2>
+				<div class="block-skills" uk-scrollspy="cls: uk-animation-fade; target: > .block-skills__item; delay: 100;">
+					<div class="block-skills__item">
+						<div class="block-skills__item-icon">
+							<svg class="icon">
+								<use xlink:href="#speed"></use>
+							</svg>
+						</div>
+						<h3 class="block-skills__item-title">fast</h3>
+						<div class="block-skills__item-text">
+							Fast load times and lag free interaction, my highest priority.
+						</div>
+					</div>
+					<div class="block-skills__item">
+						<div class="block-skills__item-icon">
+							<svg class="icon">
+								<use xlink:href="#rocket"></use>
+							</svg>
+						</div>
+	
+						<h3 class="block-skills__item-title">dinamyc</h3>
+						<div class="block-skills__item-text">Fast load times and lag free interaction, my highest priority.</div>
+					</div>
+					<div class="block-skills__item">
+						<div class="block-skills__item-icon">
+							<svg class="icon">
+								<use xlink:href="#responsive"></use>
+							</svg>
+						</div>
+						<h3 class="block-skills__item-title">responsive</h3>
+						<div class="block-skills__item-text">My layouts will work on any device, big or small.</div>
+					</div>
+					<div class="block-skills__item">
+						<div class="block-skills__item-icon">
+							<svg class="icon">
+								<use xlink:href="#browser-ui"></use>
+							</svg>
+						</div>
+						<h3 class="block-skills__item-title">intuitive ui</h3>
+						<div class="block-skills__item-text">Strong preference for easy to use, intuitive UX/UI.</div>
+					</div>
+				</div>
+	
+				<div class="progress-block">
+					<div class="progress-block__item">
+						<div class="progress-block__item-title">html</div>
+						<div class="progress-bar">
+							<div class="progress-bar__enter" id="html">
+	
+							</div>
+							<span>80%</span>
+						</div>
+					</div>
+					<div class="progress-block__item">
+						<div class="progress-block__item-title">css</div>
+						<div class="progress-bar">
+							<div class="progress-bar__enter" id="css">
+	
+							</div>
+							<span>70%</span>
+						</div>
+					</div>
+					<div class="progress-block__item">
+						<div class="progress-block__item-title">javascript</div>
+						<div class="progress-bar">
+							<div class="progress-bar__enter" id="js">
+	
+							</div>
+							<span>50%</span>
+						</div>
+					</div>
+					<div class="progress-block__item">
+						<div class="progress-block__item-title">design</div>
+						<div class="progress-bar">
+							<div class="progress-bar__enter" id="ds">
+							</div>
+							<span>60%</span>
+						</div>
+					</div>
+				</div>
+				<div class="techno-block">
+					<div class="techno-block__title" uk-scrollspy="cls: uk-animation-fade;">technologies & tools</div>
+					<div class="techno-block__text" uk-scrollspy="cls: uk-animation-fade;">clean-code CROSS-BROWSER COMPATIBILITY
+						pixel-perfect animation css bootstrap preprocces scss sass jquery gulp npm bem</div>
 				</div>
 			</div>
 
-			<div class="block-skills" uk-scrollspy="cls: uk-animation-fade; target: > .block-skills__item; delay: 100;">
-				<div class="block-skills__item">
-					<div class="block-skills__item-icon">
-						<svg class="icon">
-							<use xlink:href="#speed"></use>
-						</svg>
-					</div>
-					<div class="block-skills__item-title">fast</div>
-					<div class="block-skills__item-text">
-						Fast load times and lag free interaction, my highest priority.
-					</div>
-				</div>
-				<div class="block-skills__item">
-					<div class="block-skills__item-icon">
-						<svg class="icon">
-							<use xlink:href="#rocket"></use>
-						</svg>
-					</div>
-
-					<div class="block-skills__item-title">dinamyc</div>
-					<div class="block-skills__item-text">Fast load times and lag free interaction, my highest priority.</div>
-				</div>
-				<div class="block-skills__item">
-					<div class="block-skills__item-icon">
-						<svg class="icon">
-							<use xlink:href="#responsive"></use>
-						</svg>
-					</div>
-					<div class="block-skills__item-title">responsive</div>
-					<div class="block-skills__item-text">My layouts will work on any device, big or small.</div>
-				</div>
-				<div class="block-skills__item">
-					<div class="block-skills__item-icon">
-						<svg class="icon">
-							<use xlink:href="#browser-ui"></use>
-						</svg>
-					</div>
-					<div class="block-skills__item-title">intuitive ui</div>
-					<div class="block-skills__item-text">Strong preference for easy to use, intuitive UX/UI.</div>
-				</div>
-			</div>
-
-			<div class="progress-block">
-				<div class="progress-block__item">
-					<div class="progress-block__item-title">html</div>
-					<div class="progress-bar">
-						<div class="progress-bar__enter" id="html">
-
-						</div>
-						<span>80%</span>
-					</div>
-				</div>
-				<div class="progress-block__item">
-					<div class="progress-block__item-title">css</div>
-					<div class="progress-bar">
-						<div class="progress-bar__enter" id="css">
-
-						</div>
-						<span>70%</span>
-					</div>
-				</div>
-				<div class="progress-block__item">
-					<div class="progress-block__item-title">javascript</div>
-					<div class="progress-bar">
-						<div class="progress-bar__enter" id="js">
-
-						</div>
-						<span>50%</span>
-					</div>
-				</div>
-				<div class="progress-block__item">
-					<div class="progress-block__item-title">design</div>
-					<div class="progress-bar">
-						<div class="progress-bar__enter" id="ds">
-						</div>
-						<span>60%</span>
-					</div>
-				</div>
-			</div>
-			<div class="techno-block">
-				<div class="techno-block__title" uk-scrollspy="cls: uk-animation-fade;">technologies & tools</div>
-				<div class="techno-block__text" uk-scrollspy="cls: uk-animation-fade;">clean-code CROSS-BROWSER COMPATIBILITY
-					pixel-perfect animation css bootstrap preprocces scss sass jquery gulp npm bem</div>
-			</div>
+			
 
 
 
@@ -276,19 +280,19 @@
 		<section class="section-wrapper">
 			<div class="block-content" id="portfolio">
 
-				<div class="block-content__title">
+				<h2 class="block-content__title">
 					portfolio
+				</h2>
+				<h3 class="portfolio__title">Desktop & responsive version</h3>
+				<div class="portfolio portfolio_active">
+					<a href="http://arthotel.hotelcommerce.ru/" target="_blank" class="portfolio__item image-sq-block" style="background: url('img/slider/arthotel.jpg'); background-size: cover;"></a>
+					<a href="http://starboard.hotelcommerce.ru/" target="_blank" class="portfolio__item image-sq-block" style="background: url('img/slider/starboard.jpg'); background-size: cover;"></a>
+					<a href="http://wongamat.hotelcommerce.ru/" target="_blank"class="portfolio__item image-sq-block" style="background: url('img/slider/wongamat.jpg'); background-size: cover;"></a>
+					<a href="http://lavicon.hotelcommerce.ru/" target="_blank" class="portfolio__item image-sq-block" style="background: url('img/slider/lavicon.jpg'); background-size: cover;"></a>
+					<a href="http://demetra.hotelcommerce.ru/" target="_blank" class="portfolio__item image-sq-block" style="background: url('img/slider/demetra.jpg'); background-size: cover;"></a>
+
 				</div>
-				<h2 class="portfolio__title">Desktop version</h2>
-				<div class="portfolio portfolio_active" uk-lightbox="animation: fade" uk-scrollspy="cls: uk-animation-fade; target: > .portfolio__item; delay: 200;">
-					<a href="img/jobs/arthotel.jpg" class="portfolio__item image-sq-block" style="background: url('img/slider/arthotel.jpg'); background-size: cover;"></a>
-					<a href="img/jobs/starboard.jpg" class="portfolio__item image-sq-block" style="background: url('img/slider/starboard.jpg'); background-size: cover;"></a>
-					<a href="img/jobs/wongamat.jpg" class="portfolio__item image-sq-block" style="background: url('img/slider/wongamat.jpg'); background-size: cover;"></a>
-					<a href="img/jobs/lavicon.jpg" class="portfolio__item image-sq-block" style="background: url('img/slider/lavicon.jpg'); background-size: cover;"></a>
-					<a href="img/jobs/demetra.jpg" class="portfolio__item image-sq-block" style="background: url('img/slider/demetra.jpg'); background-size: cover;"></a>
-					
-				</div>
-				<h2 class="portfolio__title">Mobile version</h2>
+				<!-- <h2 class="portfolio__title">Mobile version</h2>
 				<div class="portfolio portfolio_active-mob" uk-lightbox="animation: fade" uk-scrollspy="cls: uk-animation-fade; target: > .portfolio__item; delay: 200;">
 					<a href="img/jobs/arthotel-mob.jpg" class="portfolio__item image-sq-block mobile" style="background: url('img/slider/arthotel.jpg'); background-size: cover;"></a>
 					<a href="img/jobs/starboard-mob.jpg" class="portfolio__item image-sq-block mobile" style="background: url('img/slider/starboard.jpg'); background-size: cover;"></a>
@@ -296,56 +300,7 @@
 					<a href="img/jobs/lavicon-mob.jpg" class="portfolio__item image-sq-block mobile" style="background: url('img/slider/lavicon.jpg'); background-size: cover;"></a>
 					<a href="img/jobs/demetra-mob.jpg" class="portfolio__item image-sq-block mobile" style="background: url('img/slider/demetra.jpg'); background-size: cover;"></a>
 					
-				</div>
-
-
-
-
-
-		
-
-
-
-				<!-- <div class="slider">
-					<div uk-slider>
-						<ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-grid">
-							<li>
-								<div class="slider__item">
-									<img src="img/slider/arthotel.jpg" alt="">
-								</div>
-
-							</li>
-							<li>
-								<div class="slider__item">
-									<img src="img/slider/wongamat.jpg" alt="">
-								</div>
-							</li>
-							<li>
-								<div class="slider__item">
-									<img src="img/slider/starboard.jpg" alt="">
-								</div>
-							</li>
-							<li>
-								<div class="slider__item">
-									<img src="img/slider/demetra.jpg" alt="">
-								</div>
-							</li>
-							<li>
-								<div class="slider__item">
-									<img src="img/slider/arthotel.jpg" alt="">
-								</div>
-							</li>
-						</ul>
-						<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-						<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
-					</div>
-
-
 				</div> -->
-
-
-
 
 
 			</div>
@@ -353,9 +308,9 @@
 		<section class="section-wrapper">
 			<div class="block-content" id="contact">
 
-				<div class="block-content__title">
+				<h2 class="block-content__title">
 					contact
-				</div>
+				</h2>
 
 				<div class="block-form">
 					<form class="form" id="myForm" action="https://formspree.io/pletnev.work@gmail.com" method="POST">

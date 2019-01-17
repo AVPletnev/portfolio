@@ -17,6 +17,10 @@
     outline-offset: 0;
 }
 
+h2, h3, h4 {
+	margin: 0;
+}
+
 body {
 	font-size: 18px;
 	min-width: 320px;
@@ -37,7 +41,7 @@ body {
 		outline: none;
 
 		&:focus:required:invalid {
-			border-color: red;
+			border-color: black;
 		}
 
 		&:required:valid {
@@ -60,11 +64,12 @@ body {
 	position: relative;
 	height: 110vh;
 	background-size: cover;
-	background-position: 50% 50%;
+	background-position: 20% 50%;
 	background-image: url(../img/1.jpg);
 }
 
 .button {
+	background: #fff;
 	font-size: 18px;
 	font-weight: 300;
 	border: 1px solid #b3b3b3;
@@ -115,7 +120,10 @@ body .active_link {
 
 // MODIFICATION-END //
 .section-header {
-	padding: 0 $padding-wrapper/2;
+	padding: 0 $padding-wrapper/3;
+	@include respond-to(small, '') {
+		padding: 0 $padding-wrapper/2;
+	}
 	@include respond-to(medium, '') {
 		padding: 0 $padding-wrapper;
 	}
@@ -123,11 +131,20 @@ body .active_link {
 
 .section-wrapper {
 	display: flex;
-	padding: $padding-wrapper;
-	padding-bottom: 3rem;
+	padding: $padding-wrapper/3;
 	flex-wrap: wrap;
 	max-width: 1400px;
 	margin: 0 auto;
+	&:not(:last-child) {
+		padding-bottom: 0;
+	}
+	@include respond-to(small, '') {
+		padding: $padding-wrapper/2;
+	}
+	@include respond-to(medium, '') {
+		padding: $padding-wrapper;
+		
+	}
 
 
 }
@@ -163,7 +180,6 @@ body .active_link {
 	width: 2.5rem;
 	height: 2.5rem;
 	cursor: pointer;
-	background: #798f6c;
 	border-radius: 3px;
 	display: flex;
 	align-items: center;
@@ -175,7 +191,7 @@ body .active_link {
 		display: none;
 	}
 	.burger {
-		background: white;
+		background: $accent;
 		width: 60%;
 		height: 3px;
 		border-radius: 3px;
@@ -183,7 +199,7 @@ body .active_link {
 		position: relative;
 		&::before {
 		  position: absolute;
-		  background: white;
+		  background: $accent;
 		  width: 100%;
 		  height: 3px;
 		  top: .5rem;
@@ -193,7 +209,7 @@ body .active_link {
 		}
 		&::after {
 		  position: absolute;
-		  background: white;
+		  background: $accent;
 		  width: 100%;
 		  height: 3px;
 		  bottom: .5rem;
@@ -253,8 +269,12 @@ body .active_link {
 	.menu-is-open & {
 		flex-direction: column;
 		position: absolute;
-		top: 5rem;
+		top: 5.5rem;
 		font-size: 2rem;
+		background: rgba(255, 255, 255, .6);
+		border-radius: 3px;
+
+		
 		
 	}
 
@@ -269,6 +289,9 @@ body .active_link {
 		position: relative;
 		transition: all .25s;
 		opacity: .7;
+		.menu-is-open & {
+			opacity: 1;
+		}
 
 		&:after {
 			content: '';
@@ -324,12 +347,15 @@ body .active_link {
 
 	font-weight: 300;
 	letter-spacing: .1rem;
-	padding: 0 2.5rem;
+	padding: 2rem 0;
 	position: relative;
-
+	padding-bottom: 0;
+	@include respond-to(medium, '') {
+		padding-bottom: 2rem;
+	}
 	&.about_links {
 		&::before {
-			top: 0;
+			top: 1.5rem;
 			background-color: $line;
 		}
 	}
@@ -338,21 +364,36 @@ body .active_link {
 		content: '';
 		height: 5rem;
 		background-color: $line;
-		top: -6rem;
+		top: -4rem;
 		left: 50%;
 		width: 2px;
 		position: absolute;
+		display: none;
+		@include respond-to(medium, '') {
+			display: block;
+		}
+
 
 	}
 
 	.link {
 		display: flex;
-		flex-basis: 50%;
+		flex-basis: 100%;
 		justify-content: center;
 		text-transform: uppercase;
 		font-size: 1rem;
 		font-weight: 500;
-		padding: 2rem 0;
+		padding: 0;
+		@include respond-to(small, '') {
+			flex-basis: 50%;
+			padding: 2rem 0;
+		}
+	&:last-child {
+		padding-bottom: 0;
+	}
+	&:nth-child(2) {
+		padding: 1rem 0;
+	}
 
 		a {
 
@@ -379,7 +420,7 @@ body .active_link {
 		padding: 2rem 0;
 		text-transform: uppercase;
 		font-weight: 600;
-		font-size: 1.250rem;
+	
 
 		&:after {
 			content: '';
@@ -410,30 +451,46 @@ body .active_link {
 	flex-direction: column;
 	flex-basis: 80%;
 	margin: 0 auto;
+	padding-top: 3rem;
 
 	&__item {
 		display: flex;
 		justify-content: space-between;
-		padding-top: 2rem;
+		padding-bottom: 2rem;
+		flex-direction: column;
+		@include respond-to(small, '') {
+			flex-direction: row;
+		}
 
 		&-left {
 			font-weight: 600;
 			font-size: .85rem;
 			width: 100%;
-			text-align: end;
-			margin-right: 10rem;
+			text-align: center;
+			margin-right: 0;
+			@include respond-to(small, '') {
+				margin-right: 5rem;
+				text-align: end;
+			}
+			@include respond-to(medium, '') {
+				margin-right: 10rem;
+			}
 		}
 
 		&-right {
 			width: 100%;
 			font-size: .950rem;
+			text-align: center;
+			@include respond-to(small, '') {
+				text-align: start;
+			}
 		}
 	}
 
 	&__social {
 		display: flex;
 		justify-content: center;
-		padding-top: 2rem;
+		
 
 		&-item {
 			display: flex;
@@ -445,7 +502,7 @@ body .active_link {
 			color: rgb(49, 49, 49);
 			border-radius: 3px;
 			cursor: pointer;
-
+		
 			&:hover {
 				color: rgb(255, 255, 255);
 				transform: scale(.8);
@@ -469,27 +526,37 @@ body .active_link {
 	justify-content: center;
 	width: 100%;
 	letter-spacing: .05rem;
-	padding: 2rem 2.5rem 0;
+	padding: 3rem 0;
 	position: relative;
 
 	&__item {
 		display: flex;
 		flex-direction: column;
-		flex-basis: 20%;
+		flex-basis: 100%;
 		align-items: center;
 		box-shadow: -5px 4px 12px 3px #ededed;
 		padding: 2rem 0;
 		border-radius: 8px;
 		transition: all .25s;
-
-		&:not(:last-child) {
-			margin-right: 2rem;
-		}
+		margin: 1rem 0;
+	
 
 		&:hover {
 			transform: translateY(-.35rem) translateZ(0) rotate(0deg);
 			box-shadow: -3px 2px 8px 1px #ededed;
 		}
+		@include respond-to(small, '') {
+			flex-basis: 40%;
+			margin: 1rem;
+		}
+		@include respond-to(large, '') {
+			flex-basis: 20%;
+			margin: 0;
+			&:not(:last-child) {
+				margin-right: 2rem;
+			}
+		}
+		
 
 		&-icon {
 
@@ -500,39 +567,51 @@ body .active_link {
 		}
 
 		&-title {
-			font-size: 2rem;
 			text-transform: uppercase;
 			font-weight: 300;
-			font-size: 1.250rem;
-
 			padding: 1rem 0 .5rem;
+			margin: 0;
 		}
 
 		&-text {
-			padding: 0 3rem;
+			padding: 0 1rem;
 			text-align: center;
 			line-height: 1.4;
+			font-size: 1rem;
 		}
 	}
 }
 
 .progress-block {
 	display: flex;
-	padding: 4rem 2.5rem 0;
+	padding: 0;
 	flex-grow: 1;
 	letter-spacing: .05rem;
 	flex-wrap: wrap;
 	justify-content: center;
+	@include respond-to(small, '') {
+		padding: 0;
+	}
+
 
 	&__item {
 		display: flex;
-		flex-basis: 20%;
+		flex-basis: 100%;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		margin: 1rem 0;
+		@include respond-to(small, '') {
+			flex-basis: 44%;
+			margin: 1rem;
+		}
 
-		&:not(:last-child) {
-			padding-right: 2rem;
+		@include respond-to(large, '') {
+			flex-basis: 20%;
+			margin: 0;
+			&:not(:last-child) {
+				padding-right: 2rem;
+			}
 		}
 
 		.progress-bar {
@@ -600,24 +679,46 @@ body .active_link {
 
 .techno-block {
 	display: flex;
-	flex-basis: 80%;
+	flex-basis: 100%;
 	margin: 0 auto;
-	padding: 7rem 0 2rem;
+	padding-top: 3.5rem;
 	letter-spacing: .05rem;
+	flex-wrap: wrap;
+	@include respond-to(small, '') {
+		padding-top: 4rem;
+		flex-wrap: nowrap;
+	}
+
 
 	&__title {
 		display: flex;
-		flex-basis: 50%;
-		justify-content: flex-end;
-		margin-right: 10rem;
+		flex-basis: 100%;
+		justify-content: center;
+		margin-right: 0rem;
 		text-transform: uppercase;
 		font-weight: 500;
+		padding-bottom: 1rem;
+		@include respond-to(small, '') {
+			justify-content: flex-end;
+			margin-right: 5rem;
+			flex-basis: 50%;
+			padding-bottom: 0;
+		}
+		@include respond-to(medium, '') {
+			margin-right: 10rem;
+		}
 	}
 
 	&__text {
 		display: flex;
-		flex-basis: 50%;
+		flex-basis: 100%;
 		text-transform: uppercase;
+		justify-content: center;
+		text-align: center;
+		@include respond-to(small, '') {
+			flex-basis: 50%;
+			text-align: start;
+		}
 	}
 }
 
@@ -672,25 +773,64 @@ body .portfolio_active {
 	flex-wrap: wrap;
 	flex-basis: 100%;
 	justify-content: center;
-	
+	padding-bottom: 0rem;
 	&__title {
 		text-transform: uppercase;
-		margin: 2rem auto 0;
+		margin: 2rem 0;
+		width: 100%;
+		text-align: center;
+		font-weight: 300;
+		@include respond-to(mobile-xx, '') {
+			margin-bottom: 0;
+		}
 
 	}
 
 
 
 	&__item {
-		flex-basis: 25%;
-		margin: 2rem 2rem 0 0;
+		flex-basis: 100%;
+		margin-bottom: 2rem;
 		box-shadow: -5px 4px 12px 3px #d6d6d6;
 		border-radius: 8px;
 		transition: all .25s;
-		filter: grayscale(1);
+		filter: grayscale(0);
+		@include respond-to(mobile-xx, '') {
+			flex-basis: 45%;
+			margin: 2rem 2rem 0 0;
+		}
+		@include respond-to(small, '') {
+			flex-basis: 30%;
+		}
 
+		@include respond-to(medium, '') {
+			flex-basis: 25%;
+			filter: grayscale(1);
+		}
+		&:nth-child(2) {
+			margin-right: 0;
+			@include respond-to(small, '') {
+				margin-right: 2rem;
+			}
+		}
 		&:nth-child(3) {
 			margin-right: 0;
+			@include respond-to(mobile-xx, '') {
+			margin-right: 2rem;
+			}
+			@include respond-to(small, '') {
+				margin-right: 2rem;
+			}
+			
+			@include respond-to(medium, '') {
+				margin-right: 0;
+			}
+		}
+		&:nth-child(4) {
+			margin-right: 0;
+			@include respond-to(small, '') {
+				margin-right: 2rem;
+			}
 		}
 		&:nth-child(5) {
 			margin-right: 0;
@@ -729,8 +869,14 @@ body .portfolio_active {
 	.form{
 		display: flex;
 		flex-direction: column;
-		flex-basis: 50%;
+		flex-basis: 100%;
 		max-width: 600px;
+		@include respond-to(mobile-xx, '') {
+			flex-basis: 70%;
+		}
+		@include respond-to(small, '') {
+			flex-basis: 60%;
+		}
 		&__item {
 			margin-bottom: 2rem;
 			&:nth-child(2) {
@@ -758,7 +904,19 @@ body .portfolio_active {
 				&::placeholder {
 					transition: all .25s;
 					color: black;
-					transform: translateY(-1rem) translateX(-4.5rem) scale(.75) translateZ(0) rotate(0deg);
+					transform: translateY(-1rem) translateX(-2.25rem) scale(.75) translateZ(0) rotate(0deg);
+					@include respond-to(mobile-xx, '') {
+						transform: translateY(-1rem) translateX(-2.5rem) scale(.75) translateZ(0) rotate(0deg);
+					}
+					@include respond-to(small, '') {
+						transform: translateY(-1rem) translateX(-3.25rem) scale(.75) translateZ(0) rotate(0deg);
+					}
+					@include respond-to(medium, '') {
+						transform: translateY(-1rem) translateX(-4.25rem) scale(.75) translateZ(0) rotate(0deg);
+					}
+					@include respond-to(large, '') {
+						transform: translateY(-1rem) translateX(-4.5rem) scale(.75) translateZ(0) rotate(0deg);
+					}
 				}
 			}
 		}
