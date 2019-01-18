@@ -100,7 +100,7 @@ body {
 // MODIFICATION //
 
 body .active_link {
-	color: $accent;
+	color: #1e2a0e;
 	font-weight: 300;
 	letter-spacing: .05rem;
 	position: relative;
@@ -113,7 +113,7 @@ body .active_link {
 		left: -5px;
 		right: -5px;
 		bottom: -5px;
-		background-color: $accent;
+		background-color: #1e2a0e;
 		opacity: 1;
 	}
 }
@@ -121,6 +121,7 @@ body .active_link {
 // MODIFICATION-END //
 .section-header {
 	padding: 0 $padding-wrapper/3;
+	background: rgba(255,255,255, .5);
 	@include respond-to(small, '') {
 		padding: 0 $padding-wrapper/2;
 	}
@@ -283,7 +284,7 @@ body .active_link {
 	}
 
 	&__link {
-		color: $accent;
+		color: #1e2a0e;
 		font-weight: 300;
 		letter-spacing: .05rem;
 		position: relative;
@@ -300,7 +301,7 @@ body .active_link {
 			left: 15px;
 			right: 15px;
 			bottom: -5px;
-			background-color: $accent;
+			background-color: #1e2a0e;
 			opacity: 0;
 			transition: all .25s;
 
@@ -308,7 +309,7 @@ body .active_link {
 
 		&:hover {
 			text-decoration: none;
-			color: $accent;
+			color: #1e2a0e;
 			opacity: 1;
 
 			&:after {
