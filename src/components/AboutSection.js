@@ -1,22 +1,24 @@
 import React from "react";
 import home1 from "../img/home1.png";
+//Styled
+import {About, Description, Hide, Image} from '../styles'
 
 function AboutSection() {
   return (
-    <div>
-      <div className="description">
+    <About>
+      <Description>
         <div className="title">
-          <div className="hide">
+          <Hide>
             <h2>We work to make</h2>
-          </div>
-          <div className="hide">
+          </Hide>
+          <Hide>
             <h2>
               your <span>dreams</span>
             </h2>
-          </div>
-          <div className="hide">
+          </Hide>
+          <Hide>
             <h2>come true</h2>
-          </div>
+          </Hide>
         </div>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt hic
@@ -24,12 +26,16 @@ function AboutSection() {
           vitae!
         </p>
         <button>Contact Us</button>
-      </div>
-      <div className="image">
+      </Description>
+      <Image>
         <img src={home1} alt="home" />
-      </div>
-    </div>
+      </Image>
+    </About>
   );
 }
+
+// styled component
+
+
 
 export default AboutSection;
