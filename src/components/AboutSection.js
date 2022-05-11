@@ -1,25 +1,27 @@
 import React from "react";
 import home1 from "../img/home1.png";
 //Styled
-import {About, Description, Hide, Image} from '../styles'
+import { About, Description, Hide, Image } from "../styles";
+//Framer motion
+import { motion } from "framer-motion";
 
 function AboutSection() {
   return (
     <About>
       <Description>
-        <div className="title">
+        <motion.div className="title">
           <Hide>
-            <h2>We work to make</h2>
+            <motion.h2>We work to make</motion.h2>
           </Hide>
           <Hide>
-            <h2>
+            <motion.h2>
               your <span>dreams</span>
-            </h2>
+            </motion.h2>
           </Hide>
           <Hide>
-            <h2>come true</h2>
+            <motion.h2>come true</motion.h2>
           </Hide>
-        </div>
+        </motion.div>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt hic
           quae laborum error quis reiciendis blanditiis doloribus culpa et
@@ -35,7 +37,5 @@ function AboutSection() {
 }
 
 // styled component
-
-
 
 export default AboutSection;
