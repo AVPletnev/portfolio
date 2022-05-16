@@ -17,6 +17,7 @@ import {
 } from "../animation";
 import { useScroll } from "../components/useScroll";
 
+
 function OurWork() {
   const [element, controls] = useScroll();
   const [element2, controls2] = useScroll();
@@ -46,7 +47,12 @@ function OurWork() {
           <img src={theracer} alt="theracer" />
         </Link>
       </Movie>
-      <Movie variants={fade} animate={controls2} ref={element2} initial="hidden">
+      <Movie
+        variants={fade}
+        animate={controls2}
+        ref={element2}
+        initial="hidden"
+      >
         <h2>The goodtimes</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/good-times">

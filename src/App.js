@@ -12,13 +12,18 @@ import MovieDetail from "./pages/MovieDetail";
 import { AnimatePresence } from "framer-motion";
 
 function App() {
-  const location = useLocation()
+  const location = useLocation();
 
   return (
     <div className="App">
       <GlobalStyle />
       <Nav />
-      <AnimatePresence exitBeforeEnter>
+      <AnimatePresence
+        exitBeforeEnter
+        onExitComplete={() => {
+          window.scrollTo(0, 0);
+        }}
+      >
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<AboutUs />} exact />
           <Route path="/contact" element={<ContactUs />} />
